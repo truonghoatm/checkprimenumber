@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+        var num = 2;
+        var i;
+        var check;
+        var count = 0;
+        while ( count <20) {
+            if (num == 2 || num == 3) {
+                document.write(num + "</br>");
+                num +=1;
+                count +=1;
+            } else {
+                for (i = 2; i <= Math.sqrt(num); i++) {
+                    if (num % i == 0) {
+                        check = 0;
+                        break;
+                    } else
+                        check = 1;
+                }
+                if (check == 0) {
+                   num+=1;
+                } else {
+                    document.write(num + "</br>");
+                    num += 1;
+                    count +=1;
+                }
+
+            }
+
+        }
+</script>
+</body>
+</html>
